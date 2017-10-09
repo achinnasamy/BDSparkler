@@ -1,0 +1,1 @@
+spark-submit --py-files=bdsparkler-3.0-py2.7.egg __main__.py
