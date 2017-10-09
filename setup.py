@@ -64,3 +64,7 @@ setup(
         ],
     },
 )
+
+# Copy the main file to the dist directory
+from shutil import copyfile
+copyfile("main.py", "dist/main.py")

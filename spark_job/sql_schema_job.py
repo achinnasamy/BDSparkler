@@ -9,7 +9,7 @@ def print_each_line(eachLine):
     print eachLine
     return
 
-def main():
+def main(file):
 
     sparkconfig = SparkConf()
     sparkconfig.setMaster("local[*]")
@@ -20,7 +20,7 @@ def main():
 
     csvDF = sqlContext.read \
                       .option("header", "true") \
-                      .csv("/home/dharshekthvel/Downloads/stop.csv")
+                      .csv(file)
 
     csvDF.printSchema()
     csvDF.show(2)

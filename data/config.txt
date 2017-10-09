@@ -1,1 +1,3 @@
-spark-submit --py-files=bdsparkler-3.0-py2.7.egg __main__.py
+spark-submit --py-files=bdsparkler-3.0-py2.7.egg main.py
+
+spark-submit --py-files=bdsparkler-3.0-py2.7.egg main.py --job=JobName --file=/home/dharshekthvel/Downloads/stop.csv
